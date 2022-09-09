@@ -19,7 +19,7 @@
 2. Либо для просмотра курса можно перейти по ссылке вида http://127.0.0.1:8000/rates/get_rate/2022-09-09/GBP/ . В систему загружены курсы с 1 августа 2022 года по 11 сентября 2022 года.
 3. Для тестирования post запроса можно воспользоваться соответствующими плагинами либо выполнить код в питоне:
 
-1. import requests
-2. date_import = {'date_import': '2022-07-02'}
-3. resp = requests.post('http://127.0.0.1:8000/rates/import_rates/', json=date_import)
-4. print(resp.json())
+import requests  
+date_import = {'date_import': '2022-07-02'}  
+resp = requests.post('http://127.0.0.1:8000/rates/import_rates/', json=date_import)  
+print(resp.json())  
